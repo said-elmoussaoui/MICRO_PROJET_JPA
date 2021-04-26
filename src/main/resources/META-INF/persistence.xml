@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    <persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+
+
+        <class>entities.articles</class>
+        <class>entities.categories</class>
+        <class>entities.clients</class>
+        <class>entities.commandes</class>
+        <class>entities.lignecommandes</class>
+        <class>entities.ArticleMod</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/microproj"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.show_sql" value="true"/>
+
+        </properties>
+    </persistence-unit>
+
+</persistence>
